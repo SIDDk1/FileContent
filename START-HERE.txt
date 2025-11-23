@@ -1,0 +1,83 @@
+╔════════════════════════════════════════════════════════════════╗
+║          HOW TO DEPLOY YOUR PROJECT - 3 SIMPLE STEPS          ║
+╚════════════════════════════════════════════════════════════════╝
+
+STEP 1: Check Docker Desktop
+─────────────────────────────
+1. Look at the bottom-right corner of your screen (system tray)
+2. Do you see a WHALE icon 🐳?
+   - If it's GREEN ✅ = Docker is running (GOOD!)
+   - If it's GRAY or MISSING = Docker is not running
+
+3. If Docker is NOT running:
+   → Click Start menu
+   → Type "Docker Desktop"
+   → Click to open it
+   → WAIT 1-2 minutes for it to start
+
+
+STEP 2: Open PowerShell and Run One Command
+────────────────────────────────────────────
+1. Press Windows Key + X
+2. Click "Windows PowerShell" or "Terminal"
+3. Copy and paste this EXACT command:
+   
+   cd "S:\File_Content_Tracker_Using_AI-main\File_Content_Tracker_Using_AI-main"
+
+4. Press Enter
+
+5. Then copy and paste this command:
+   
+   docker compose up -d --build
+
+6. Press Enter
+
+7. WAIT 10-15 minutes (you'll see lots of messages, that's normal!)
+
+
+STEP 3: Open Your Application
+──────────────────────────────
+1. Wait until Step 2 finishes (you'll see "Started" messages)
+2. Open your web browser (Chrome, Edge, Firefox)
+3. Type this in the address bar:
+   
+   http://localhost:3000
+
+4. Press Enter
+5. Your application should appear! 🎉
+
+
+═══════════════════════════════════════════════════════════════
+
+📝 QUICK COMMANDS (Copy these if needed):
+
+Check if it's running:
+  docker ps
+
+Stop the application:
+  docker compose down
+
+Start it again:
+  docker compose up -d
+
+See what's happening:
+  docker compose logs -f
+
+═══════════════════════════════════════════════════════════════
+
+❓ NEED HELP?
+
+Problem: "Docker is not running"
+→ Start Docker Desktop and wait 1-2 minutes
+
+Problem: "Port already in use"
+→ Stop other apps using port 3000
+
+Problem: Can't see the application
+→ Wait a bit longer, then try again
+→ Check with: docker ps
+
+═══════════════════════════════════════════════════════════════
+
+
+
