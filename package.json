@@ -59,7 +59,7 @@
     "jszip": "^3.10.1",
     "lucide-react": "^0.454.0",
     "mammoth": "latest",
-    "next": "latest",
+    "next": "15.5.8",
     "next-themes": "latest",
     "pdfjs-dist": "^5.3.93",
     "react": "^19.1.0",
