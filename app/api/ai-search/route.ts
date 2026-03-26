@@ -1,11 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
+// Use edge runtime for reliable streaming on Vercel
+export const runtime = "edge";
+
 // Initialize the Google Generative AI instance
 // This requires the GEMINI_API_KEY environment variable to be set
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || "");
-
-export const maxDuration = 60; // Allow longer execution time on Vercel
 
 export async function POST(req: NextRequest) {
   try {
