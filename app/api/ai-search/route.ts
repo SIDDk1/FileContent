@@ -29,9 +29,9 @@ export async function POST(req: NextRequest) {
       ? content 
       : "No specific file content provided. Please answer based on your general knowledge.";
 
-    // Use modern gemini-1.5-flash which is fast, cheap/free, and has a 1 million token context window.
+    // Use modern gemini-2.5-flash which is fast, cheap/free, and has a 1 million token context window.
     // This entirely removes the need for manual chunking that was required by local Ollama models.
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
     const prompt = `Answer the following question based on the provided content. Be concise, direct, and helpful.
 
